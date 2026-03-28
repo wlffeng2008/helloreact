@@ -1,0 +1,29 @@
+D:\helloReact (master)
+λ gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 1C65-FE2D
+Press Enter to open https://github.com/login/device in your browser...
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as wlffeng2008
+
+D:\helloReact (master)
+λ gh repo create helloreact --public --source=. --remote=origin --push
+✓ Created repository wlffeng2008/helloreact on github.com
+  https://github.com/wlffeng2008/helloreact
+✓ Added remote https://github.com/wlffeng2008/helloreact.git
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (21/21), 29.81 KiB | 2.98 MiB/s, done.
+Total 21 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/wlffeng2008/helloreact.git
+ * [new branch]      HEAD -> master
+branch 'master' set up to track 'origin/master'.
+✓ Pushed commits to https://github.com/wlffeng2008/helloreact.git
